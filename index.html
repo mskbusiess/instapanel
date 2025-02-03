@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSK-BOT - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-page">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MSK-BOT</h1>
+            <p class="tagline">Your Intelligent AI Companion</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>🤖 Advanced AI</h3>
+                    <p>Powered by cutting-edge GPT technology</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 Natural Conversations</h3>
+                    <p>Chat naturally like talking to a friend</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Instant Responses</h3>
+                    <p>Get quick and accurate answers</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 No Login Required</h3>
+                    <p>Start chatting immediately, no registration needed</p>
+                </div>
+            </div>
+            <a href="chat.html" class="chat-now-btn">Chat Now</a>
+        </div>
+    </div>
+    <div class="about-section">
+        <h2>About MSK-BOT</h2>
+        <p>MSK-BOT is your intelligent AI assistant, designed to make your life easier. Whether you need help with writing, analysis, coding, or just want someone to talk to, MSK-BOT is here for you 24/7.</p>
+        <div class="capabilities">
+            <h3>What can MSK-BOT do?</h3>
+            <ul>
+                <li>Answer your questions instantly</li>
+                <li>Help with writing and content creation</li>
+                <li>Assist with problem-solving</li>
+                <li>Provide explanations on complex topics</li>
+                <li>Engage in friendly conversation</li>
+                <li>Analyze documents and PDFs</li>
+                <li>And much more!</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="document-analysis-section">
+        <h2>Document Analysis</h2>
+        <p>Upload your PDF or document files for instant AI analysis</p>
+        
+        <div class="upload-container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-input-wrapper">
+                    <input type="file" id="documentInput" accept=".pdf,.doc,.docx,.txt" class="file-input">
+                    <label for="documentInput" class="file-label">
+                        <span class="upload-icon">📄</span>
+                        Choose a file
+                    </label>
+                </div>
+                <div id="fileName" class="file-name"></div>
+                <button type="submit" class="analyze-btn" disabled>Analyze Document</button>
+            </form>
+        </div>
+        
+        <div id="analysisResult" class="analysis-result">
+            <div class="loader" style="display: none;">Analyzing...</div>
+            <div class="result-content"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
